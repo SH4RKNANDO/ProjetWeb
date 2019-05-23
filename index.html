@@ -1,0 +1,605 @@
+<!DOCTYPE HTML>
+<html lang="fr_BE">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CV PERSONALISE</title>
+
+    <!-- Style Sheet -->
+    <link rel='stylesheet' type="text/css" href="Ressources/css/stylesheet.css">
+
+    <!-- Responsive Style Sheet -->
+    <link rel='stylesheet' type="text/css" href="Ressources/css/responsive.css">
+
+    <!-- jquery -->
+    <script src="Ressources/js/jquery-3.4.0.min.js"></script>
+
+    <!-- FONT AWESOME -->
+    <link rel='stylesheet' href="Ressources/css/all.min.css">
+
+    <!-- Javascript -->
+    <script src="Ressources/js/main.js"></script>
+
+    <!-- Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+
+    <!-- MEDIA QUERIES -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!-- SideBar Mobile / PC / Tablet -->
+    <div id="SideBarContent">
+        <!--  SideBar Mobile -->
+        <div id="SideBarMobile">
+            <ul id="MobileNav" class="center">
+                <li class="mobile">
+                    <a id="MHard" class="mobilea" href="#" onclick="clickMobile(this)">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                    <ul id="CircularMenu">
+                        <li class="menu-item"><a><i class="fa fa-desktop"></i></a></li>
+                        <li class="menu-item"><a><i class="fas fa-server"></i></a></li>
+                        <li class="menu-item"><a><i class="fas fa-terminal"></i></a></li>
+                        <li class="menu-item"><a><i class="fas fa-code"></i></a></li>
+                        <li class="menu-item"><a><i class="fas fa-network-wired"></i></a></li>
+                    </ul>
+                </li>
+                <li class="mobile">
+                    <a class="mobilea" id="MHome" href="#Home" onclick="clickMobile(this)">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </li>
+                <li class="mobile">
+                    <a class="mobilea" id="MContact" href="#" onclick="clickMobile(this)">
+                        <i class="far fa-address-card"></i>
+                    </a>
+                    <ul id="CircularMenu2">
+                        <li class="menu-item2"><a><i class="fas fa-graduation-cap"></i></a></li>
+                        <li class="menu-item2"><a><i class="fas fa-graduation-cap"></i></a></li>
+                        <li class="menu-item2"><a><i class="fas fa-graduation-cap"></i></a></li>
+                        <li class="menu-item2"><a><i class="fas fa-graduation-cap"></i></a></li>
+                        <li class="menu-item2"><a><i class="far fa-file-pdf"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!--  SideBar Tablet & PC -->
+        <div id="SideBarClose">
+            <ul>
+                <div class="con-tooltip right">
+                    <a class="openbtn"><i id="OpenBtn" class="fas fa-angle-double-right zoom"></i></a>
+                    <div class="tooltip"><span>Ouvrir la SideBar </span></div>
+                </div>
+
+                <div class="con-tooltip right">
+                    <a href="#Home"><i id="SHome" class="fas fa-home zoom"></i></a>
+                    <div class="tooltip"><span>Naviguer vers Home</span></div>
+                </div>
+
+                <div class="con-tooltip right">
+                    <a href="#HardSkillsContent" onclick="currentSlide(1)"><i class="fas fa-terminal"></i></a>
+                    <div class="tooltip"><span>Naviguer vers OS</span></div>
+                </div>
+
+                <div class="con-tooltip right">
+                    <a href="#HardSkillsContent" onclick="currentSlide(4)"><i class="fas fa-laptop-code zoom"></i></a>
+                    <div class="tooltip"><span>Naviguer vers Programmation</span></div>
+                </div>
+
+                <div class="con-tooltip right">
+                    <a href="#HardSkillsContent" onclick="currentSlide(5)"><i class="fas fa-scroll zoom"></i></a>
+                    <div class="tooltip"><span>Naviguer vers Scripting</span></div>
+                </div>
+
+                <div class="con-tooltip right">
+                    <a href="#HardSkillsContent" onclick="currentSlide(6)"><i class="fas fa-database zoom"></i></a>
+                    <div class="tooltip"><span>Naviguer vers Web & Database</span></div>
+                </div>
+
+                <div class="con-tooltip right">
+                    <a href="#HardSkillsContent" onclick="currentSlide(7)"><i class="fas fa-network-wired zoom"></i></a>
+                    <div class="tooltip"><span>Naviguer vers Réseaux</span></div>
+                </div>
+
+                <div class="con-tooltip right">
+                    <a href="#softskillsContent"><i class="fas fa-graduation-cap zoom"></i></a>
+                    <div class="tooltip"><span>Naviguer vers SoftSkills</span></div>
+                </div>
+
+                <div class="con-tooltip right">
+                    <a href="#"><i id="SLang" class="fas fa-language zoom"></i></a>
+                    <div class="tooltip"><span>Naviguer vers Langues</span></div>
+                </div>
+
+                <div class="con-tooltip right">
+                    <a href="#ContactContent"><i id="SContact" class="far fa-address-card zoom"></i></a>
+                    <div class="tooltip"><span>Naviguer vers Contact</span></div>
+                </div>
+
+
+                <div class="con-tooltip right">
+                    <a href="" target="_blank"><i id="DownloadCv" class="far fa-file-pdf zoom"></i></a>
+                    <div class="tooltip"><span>Télécharger PDF</span></div>
+                </div>
+            </ul>
+        </div>
+        <!--  SideBar open -->
+        <div id="SideBarOpen" class="sidebar">
+            <a id="CloseBtn" class="content">×</a>
+            <div id="Infos" class="center content">
+                <h3>BERTIEAUX JORDAN</h3>
+                <a href="#" class="zoomtxt">
+                    <img src="Ressources/img/profile_img.jpg" alt="photos de profile" height="100px">
+                </a>
+                <hr>
+            </div>
+            <div id="HardSkills" class="content">
+                <h3 class="center">Programmation</h3>
+                <ul class="center">
+                    <li><a href="#HardSkillsContent" onclick="currentSlide(4)"><img height="30" src="Ressources/img/Logo/Logo_C.png" alt="Logo C"></a></li>
+                    <li><a href="#HardSkillsContent" onclick="currentSlide(4)"><img height="30" src="Ressources/img/Logo/Logo_Java.png" alt="Logo Java"></a></li>
+                    <li><a href="#HardSkillsContent" onclick="currentSlide(4)"><img height="30" src="Ressources/img/Logo/Logo_CSharp.png" alt="Logo Csharp"></a></li>
+                    <li><a href="#HardSkillsContent" onclick="currentSlide(4)"><img height="30" src="Ressources/img/Logo/Logo_WPF.png" alt="Logo WPF"></a></li>
+                </ul>
+                <hr>
+                <h3 class="center">Scripting</h3>
+                <ul class="center">
+                    <li><a href="#HardSkillsContent" onclick="currentSlide(5)"><img height="30" src="Ressources/img/Logo/Logo_Bash.png" alt="Logo Bash"></a></li>
+                    <li><a href="#HardSkillsContent" onclick="currentSlide(5)"><img height="30" src="Ressources/img/Logo/Logo_Python.png" alt="Logo Python"></a></li>
+                    <li><a href="#HardSkillsContent" onclick="currentSlide(6)"><img height="30" src="Ressources/img/Logo/Logo_JS.png" alt="Logo JS"></a></li>
+                    <li><a href="#HardSkillsContent" onclick="currentSlide(6)"><img height="30" src="Ressources/img/Logo/Logo_Html.png" alt="Logo HTML"></a></li>
+                    <li><a href="#HardSkillsContent" onclick="currentSlide(6)"><img height="30" src="Ressources/img/Logo/Logo_Jquery.gif" alt="Logo Jquery"></a></li>
+                    <li><a href="#HardSkillsContent" onclick="currentSlide(6)"><img height="30" src="Ressources/img/Logo/Logo_Gcode.png" alt="Logo Gcode"></a></li>
+                </ul>
+                <hr>
+                <h3 class="center">Base de données</h3>
+                <ul class="center">
+                    <li><a href="#HardSkillsContent" onclick="currentSlide(6)"><img height="30" src="Ressources/img/Logo/Logo_mysql-mariadb.png" alt="Logo Mysql Mariadb"></a></li>
+                    <li><a href="#HardSkillsContent" onclick="currentSlide(6)"><img height="30" src="Ressources/img/Logo/Logo_Postgresql.png" alt="Logo Postgresql"></a></li>
+                </ul>
+                <hr>
+                <h3 class="center">Réseaux</h3>
+                <ul class="center">
+                    <li><a href="#HardSkillsContent" onclick="currentSlide(7)"><img height="30" src="Ressources/img/Logo/Logo_Cisco.png" alt="Logo Cisco"></a></li>
+                    <li><a href="#HardSkillsContent" onclick="currentSlide(7)"><img height="30" src="Ressources/img/Logo/Logo_Packettracer.jpg" alt="Logo Packettracer"></a></li>
+                    <li><a href="#HardSkillsContent" onclick="currentSlide(7)"><img height="30" src="Ressources/img/Logo/LogoFortinet.png" alt="Logo Fortinet"></a></li>
+                </ul>
+                <hr>
+            </div>
+            <div id="SoftSkill" class="content">
+                <h3 class="center">SoftSkills</h3>
+                <ul class="center">
+                    <li><a href="#"><img height="30" src="Ressources/img/Logo/Logo_Communication.png" alt="Logo Communication"></a></li>
+                    <li><a href="#"><img height="30" src="Ressources/img/Logo/Logo_motivation.jpg" alt="Logo Motivation"></a></li>
+                    <li><a href="#"><img height="30" src="Ressources/img/Logo/Logo_TeamWork.jpg" alt="Logo Team"></a></li>
+                    <li><a href="#"><img height="30" src="Ressources/img/Logo/Logo_WorkPressur.jpg" alt="Logo Sous Pression"></a></li>
+                </ul>
+                <hr>
+            </div>
+            <div id="Languages" class="content">
+                <h3 class="center">Languages</h3>
+                <ul class="center">
+                    <li><a href="#"><img height="30" src="Ressources/img/Lang/French_Logo.png" alt="Drapeau Francais"></a></li>
+                    <li><a href="#"><img height="30" src="Ressources/img/Lang/Neerlandais_Logo.jpg" alt="Drapeau Neerlandais"></a></li>
+                    <li><a href="#"><img height="30" src="Ressources/img/Lang/English_Logo.png" alt="Drapeau Anglais"></a></li>
+                </ul>
+                <hr>
+            </div>
+            <div id="Contact" class="content">
+                <h3 class="center">Contact</h3>
+                <ul class="center">
+                    <li><a><i class="far fa-envelope"></i></a></li>
+                    <li><a><i class="fas fa-mobile"></i></a></li>
+                    <li><a><i class="fas fa-globe-europe"></i></a></li>
+                    <li><a target="_blank"><i class="fas undefined"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="Home">
+        <div id="InfosContent" class="center Pannel infosContent">
+            <h2 class="center">Jordan Bertieaux</h2>
+            <h3 class="center">Étudiant 2e Bachelier en informatique option cybersécurité</h3>
+
+            <img id="ImageProfile" class="center" src="Ressources/img/profile_img.jpg" alt="photos de profile" height="300px">
+
+            <p id="FirstPhrase" class="center">
+                Consciencieux, motivé, discipliné, passionné d'informatique à tout les niveaux,
+                <br> mon souhait est de mettre au service de votre entreprise cette passion du métier
+                <br>et d'approfondir mes connaissances théoriques et pratiques.
+            </p>
+            <ul class="center">
+                <li><a href="https://www.facebook.com/BertixGmrSound" target="_blank"><i class="fab fa-facebook-square zoom"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-linkedin zoom"></i></a></li>
+                <li><a href="https://github.com/SH4RKNANDO" target="_blank"><i class="fab fa-github zoom"></i></a></li>
+                <li><a href="" target="_blank"><i class="far fa-file-pdf zoom"></i></a></li>
+            </ul>
+            <a id="NextBtn" href="#HardSkillsContent">
+                <i class="fas fa-arrow-circle-down zoom"></i>
+            </a>
+        </div>
+    </div>
+
+    <div id="HardSkillsContent">
+        <h2>HardSkills<hr></h2>
+        <!-- Slideshow container -->
+        <div class="slideshow-container shadow">
+
+            <!-- Full-width images with number and caption text -->
+            <!-- OS Desktop  -->
+            <div class="mySlides fade">
+                <div id="Desktop" class="slide-items">
+                    <div>
+                        <h3> <i class="fa fa-desktop"></i>OS Desktop </h3>
+                        <h4><i class="fab fa-linux"></i> Linux </h4>
+                            <p>Les distributions linux desktop principalement utilisées, ubuntu, deepin, archlinux, ...
+                            <br>Ainsi que Linux From Scratch (LFS: Construction d'un linux à partir des sources).
+                            <br><br>Ma distribution utilisée au quotidien est ArchLinux sur lequel,
+                            <br>je développe en C, Java, Android, HTML, JS, JQUERY.
+                            <br><br>Kali Linux est une autre distribution que j'utilise sur différents supports
+                            <br>(SmartPhone, Tablette, Raspberry, Machine Virtuel) dans le but de :</p>
+                        <ul class="">
+                            <li>Monitoring Réseaux (nmap, zenmap, ethercap, wireshark)</li>
+                            <li>Test de sécurité (framework metasploit, beef, Armitage/CobaltStrike)</li>
+                            <li>Recherche de vulnérabilités (Nessus, Openvas)</li>
+                            <li>Exploitation de failles connues (CVE sur exploitdb)</li>
+                            <li>Exploitation HID (Human Interface Device)</li>
+                        </ul>
+                    </div>
+                    <div id="WinDesk">
+                        <h4><i class="fab fa-windows"></i> windows 10</h4>
+                        <ul class="">
+                            <li>Développement d'application .net</li>
+                            <li>Déploiement et configuration d'un poste client</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- OS Server -->
+            <div class="mySlides fade">
+                <div id="Server" class="slide-items">
+                    <h3><i class="fas fa-server"></i> OS Server </h3>
+                    <div>
+                        <h4> Windows Server 2012 </h4>
+                        <ul class="">
+                            <li>Déploiement (configuration de base)</li>
+                            <li>Service DHCP (gestion des scopes, du bail, de la politique dhcp)</li>
+                            <li>Service DNS (gestion de la zone primaire, secondaire, déléguée, DNS de cache)</li>
+                            <li>Service AD (gestion des utilisateurs, de la politique utilisateur)</li>
+                            <li>Déploiement des Services automatisés (Powershell)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4> Archlinux RedHat CentOS Fedora Ubuntu  Debian</h4>
+                        <ul class="">
+                            <li>Smart Serveur de caméra surveillance (Zoneminder) </li>
+                            <li>Déploiement (Configuration de base)</li>
+                            <li>Service ssh (ssh jail, sécurisation, gestion clés privées/publiques) </li>
+                            <li>Service Samba (gestions des utilisateurs, groupes) </li>
+                            <li>Service VSFTPD (sécurisation clés privée/publique, jailuser) </li>
+                            <li>Service Apache (gestions des hôtes virtuels) </li>
+                            <li>Service DNS - BIND (gestions des zones primaires,secondaires, déléguées, DNSSEC) </li>
+                            <li>Service NFS (montage automatique, ghost)</li>
+                            <li>Sécurité de Base (Selinux, FSTAB, Single Boot, règles iptables, anti-scan, AV)</li>
+                            <li>Serveur WebRadio (AirTimes)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- OS Réseaux -->
+            <div class="mySlides fade">
+                <div id="NetworkOS" class="slide-items">
+                    <h3><i class="fas fa-terminal"></i> OS Network </h3>
+                    <div>
+                        <h4>Cisco Operating System (IOS) </h4>
+                        <ul class="">
+                            <li>Configuration de Base Switch Access, Switch Distribution, Router </li>
+                            <li>Configuration de vlan, dhcp, voip, VPN </li>
+                            <li>Configuration du routage statique, dynamique</li>
+                            <li>Sécurisation switch, router (Access ssh, encryption, sécurisation ARP/IPSG)</li>
+                            <li>Configuration d'ACL étendues</li>
+                            <li>Monitoring</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4> OpenWrt </h4>
+                        <ul class="">
+                            <li>Déploiement OpenVPN</li>
+                            <li>Configuration bandes wifi (fréquences, ...)</li>
+                            <li>Configuration dhcp, vlan, règles iptables LAN/WAN</li>
+                            <li>Sécurisation (HTTPS, SSH clés Privée/Publique, ...)</li>
+                            <li>Monitoring</li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <h4>Fortinet FortiOS </h4>
+                        <ul class="decorationNone">
+                            <li>Configuration du routage, DHCP, inter-vlan</li>
+                            <li>Configuration en VDOM</li>
+                            <li>Sécurisation du firewall (ACL étendu)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Prog  -->
+            <div class="mySlides fade">
+                <div id="Prog" class="slide-items">
+                    <h3><i class="fas fa-code"></i>Programmation</h3>
+                    <div>
+                        <h4> C </h4>
+                        <ul class="">
+                            <li>Création de driver</li>
+                            <li>Application console (Commande Linux)</li>
+                            <li>Application Arduino avec API (ESP802.11) </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4> Micro C </h4>
+                        <ul class="">
+                            <li>Programmation d'un Pic Microship (interface électronique)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4> C# </h4>
+                        <ul class="">
+                            <li>IDE Visual Studio</li>
+                            <li>Application Graphique (WPF)</li>
+                            <li>Application Console</li>
+                            <li>Développement de Service Windows</li>
+                            <li>Programmation Réseaux (Socket)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4> Java </h4>
+                        <ul class="">
+                            <li>Développement d'interface Graphique (Java Swing)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Scripting  -->
+            <div class="mySlides fade">
+                <div id="Scripting" class="slide-items">
+                    <h3> <i class="fa fa-scroll"></i>Scripting </h3>
+                    <div>
+                        <h4> Bash </h4>
+                        <ul class="">
+                            <li>Déploiment de server</li>
+                            <li>Création de service (Systemd & InitV)</li>
+                            <li>Monitoring (disque, réseaux, ...)</li>
+                            <li>Sécurisation & notification par mail</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4> Python 2 & 3</h4>
+                        <ul class="">
+                            <li>Création de bibliothèques</li>
+                            <li>Application console, graphique, réseaux (Socket)</li>
+                            <li>Création de drivers (Bus i²C, capteurs ultrason, moteur DC, servos-moteur, ...)</li>
+                            <li>Application système Linux, base de données</li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <h4> PowerShell </h4>
+                        <ul>
+                            <li>Déploiement (configuration de base)</li>
+                            <li>Service DHCP (gestion des scopes, gestion du bail, politiques)</li>
+                            <li>Service DNS (gestion de la zone primaire, secondaire, déleguées, DNS de cache)</li>
+                            <li>Service AD (gestion des utilisateurs, gestion de la politiques)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Prog Web  -->
+            <div class="mySlides fade">
+                <div id="ProgWeb" class="slide-items">
+                    <h3><i class="fab fa-chrome"></i> Programmation Web et Database <i class="fa fa-database"></i> </h3>
+                    <div>
+                        <h4> HTML 5 </h4>
+                        <ul class="">
+                            <li>Conception de site web, web application</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4> CSS 3 / SCSS </h4>
+                        <ul class="">
+                            <li>Gestion du responsive</li>
+                            <li>Animation 2D / 3D</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4> JavaScript / Jquery </h4>
+                        <ul class="">
+                            <li>Gestion des événements</li>
+                            <li>Modification de document</li>
+                            <li>Animation</li>
+                            <li>Lecture de fichier (JSON, XML,...)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4> Mysql </h4>
+                        <ul class="">
+                            <li>Opérations élémentaires sur les tables, bases de données</li>
+                            <li>Backup d'une base de donnée, d'une table</li>
+                            <li>Gestion des utilisateurs</li>
+                            <li>Génération des vues</li>
+                            <li>Création de procédures stockées</li>
+                            <li>Création de Scripts SQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Network  -->
+            <div class="mySlides fade">
+                <div id="Network" class="slide-items">
+                    <h3> <i class="fa fa-network-wired"></i>Réseaux </h3>
+                    <div id="cmpnet">
+                        <h4> Compétences Réseaux </h4>
+                        <ul class="">
+                            <li>Création de script cisco</li>
+                            <li>Développement topologie multi-sites</li>
+                            <li>Documentation topologie multi-sites</li>
+                            <li>Simulation du réseaux (Cisco Packettracer)</li>
+                            <li>Développement du Plan de nommage, d'addressage, ...</li>
+                            <li>Dépannage vlan, routage statique et dynamique</li>
+                            <li>Analyse et sécurisation en profondeur</li>
+                            <li>Mise en place d'une politique de sécurité</li>
+                            <li>Plan de recouvrement après sinistre (DRP)</li>
+                            <li>Mise en place de la redondance</li>
+                        </ul>
+                        <h4> Matériel réseaux utilisé </h4>
+                        <ul class="">
+                            <li>switch layer 2 (Catalyst 2960)</li>
+                            <li>Switch Layer 3 (Catalyst 3560, 3650)</li>
+                            <li>Router (1941, 2911, modulaire)</li>
+                            <li>Firewall Fortigate (Fortinet 60D, Fortiwifi 60D</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Security -->
+            <div class="mySlides fade">
+                <div id="Security">
+                    <h3><i class="fas fa-shield-alt"></i> Sécurité </h3>
+                    <div>
+                        <h3> Collecte de données </h3>
+                        <ul class="">
+                            <li>Scan de ports, vulnérabilités (nmap, openvas, nessus)</li>
+                            <li>campagne de fishing ciblée, Social engineering</li>
+                            <li>Utilisation de sniffer (site web visités, image consultées, ...)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3> Exploitation </h3>
+                        <ul class="">
+                            <li>Exploitation de vulnérabilités connues (CVE sur <a href="https://www.exploit-db.com/">exploitdb</a>)</li>
+                            <li>Framework Metasploit (Cobaltstrike, Armitage)</li>
+                            <li>Création de failles (Backdoor, escalade de privilege)</li>
+                            <li>Exploitation XSS (beef), payload android Linux Windows Java</li>
+                            <li>exploitation en couche 2 modelOsi (Mac Spoofing, idle Scan, ...)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3> Forensic </h3>
+                        <ul>
+                            <li>Création de ghost</li>
+                            <li>Analyse d'APK, fichier binaire (hollydbg, apkstudio) </li>
+                            <li>Recherche de donnée dans un disque dur, Navigateur</li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <h3> Wifi Hacking </h3>
+                        <ul class="">
+                            <li>Cracking WPA/WPA2, Protocol WPA2 Bypass</li>
+                            <li>Social engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls SlideView buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a id="BtnPlay" class="play-btn" onclick="BtnPlay(this)"></a>
+
+            <!-- The dots/circles -->
+            <div class="dotsContent">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="SoftSkillsContent">
+        <h2 class="center"><i class="fas fa-graduation-cap"></i> SoftSkills </h2>
+        <div>
+            <p>Lors de mes travaux en équipes, j'ai appris a développer les compétences suivantes:</p>
+            <ul class="">
+                <li>Communication : Simplifié par des outils tels que Teams, Discord, ...</li>
+                <li>TeamsWorking : S'accorder sur les tâches à réaliser, Distributions des tâches, Décomposition du travail à réaliser</li>
+                <li>Self-motivation : Ma Motivation est de mettre à bien le projet en un temps reccord</li>
+                <li>Work Pressure : Le respect des délais ainsi que l'empilation de projets à réaliser m'ont permis de gérer mon stress et donc d'augmenter ma capacité à réaliser au Stress</li>
+                <li>Méthodologie de travail : Agile pour les petits projets, SCRUM pour des plus gros projets afin de mieux répartir le travail et donc de mieux gérer une équipe</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="" id="LanguageContent">
+        <h2 class=""><i class="fas fa-language"></i> Langues </h2>
+        <div class="">
+            <div id="circle_fr">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <canvas height="200" width="200" id="counter_fr" class="counter"></canvas>
+            </div>
+            <div id="circle_en">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <canvas height="200" width="200" id="counter_en" class="counter"></canvas>
+            </div>
+            <div id="circle_nl">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <canvas height="200" width="200" id="counter_nl" class="counter"></canvas>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="ContactContent">
+        <div class="container-contact100">
+
+            <div class="contact100-map" id="google_map" data-map-x="50.4524031" data-map-y="4.1410165" data-pin="Ressources/img/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
+
+            <button class="contact100-btn-show">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </button>
+
+            <div class="wrap-contact100">
+                <button class="contact100-btn-hide zoom"><span>×</span></button>
+
+                <form class="contact100-form validate-form">
+				<span class="contact100-form-title">Contactez-moi</span>
+
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+                        <span class="label-input100">Votre nom</span>
+                        <input class="input100" type="text" name="name" placeholder="Entrer votre nom">
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valide adresse mail est requis: ex@abc.xyz">
+                        <span class="label-input100">Adresse email</span>
+                        <input class="input100" type="text" name="email" placeholder="Entrer votre email">
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate = "Message est un champs obligatoire">
+                        <span class="label-input100">Message</span>
+                        <textarea class="input100" name="message" placeholder="Votre message ici..."></textarea>
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="container-contact100-form-btn">
+                        <button class="contact100-form-btn">
+						<span>Envoyer<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i></span>
+                        </button>
+                    </div>
+                </form>
+
+                <span class="contact100-more">Contactez-moi au <span class="contact100-more-highlight">+32 494 42 15 14</span>
+			</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
