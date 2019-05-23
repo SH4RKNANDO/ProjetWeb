@@ -30,7 +30,7 @@
     #NextBtn i { font-size: 5vh; }
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
     .wrap-contact100 { padding: 82px 80px 33px 80px; }
     .alert-validate::before { visibility: visible; opacity: 1; }
 }
@@ -54,7 +54,12 @@
     #InfosContent p { font-size: 1.8vh; }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    #Btn { margin-left: 7vw; width: auto; }
+    .tab button { padding: 1vh 2vw; }
+
+    #HardSkill span { display: none; }
+    #HardSkill .tab i { padding-right: 10px; font-size: 1.9vw; }
     .rs1-wrap-input100 { width: 100%; }
 }
 
@@ -75,10 +80,6 @@
     }
 }
 
-@media (max-width: 576px) {
-    .wrap-contact100 { padding: 82px 15px 33px 15px; }
-}
-
 @media screen and (max-width: 600px) {
     #SideBarMobile { display: block; }
     #SideBarClose, #SideBarOpen { display: none; }
@@ -92,26 +93,20 @@
         margin-left: 20vw;
         text-align: center;
     }
-}
-
-
-
-@media screen and (min-height: 400px) {
-    #NextBtn i { margin-top: 3vh; }
-}
-
-@media screen and (max-width: 768px) {
-
-    #HardSkill span { display: none; }
-    #Btn { margin-left: 7vw; width: auto; }
-    .tab button { padding: 1vh 2vw; }
-
-    #HardSkill .tab i {
-        padding-right: 10px;
-        font-size: 1.9vw;
+    .container-contact100 {
+        height: 80vh;
+        min-height: 80vh;
+        margin-top: 3vh;
     }
+    .wrap-input100 { margin-bottom: 20px; }
+    .container-contact100-form-btn { margin-top: 0; }
+    .contact100-form { padding-bottom: 20px; }
+    .contact100-form-title { padding-bottom: 25px; }
+    .wrap-contact100 { padding: 50px 80px 33px 80px; }
+}
 
-    #HardSkill .tab h3 {}
+@media screen and (max-width: 576px) {
+    .wrap-contact100 { padding: 82px 15px 33px 15px; }
 }
 
 @media screen and (max-width:450px) {
@@ -122,6 +117,10 @@
     }
 
     #SideBarMobile #MHome i { bottom: 29px; }
+}
+
+@media screen and (min-height: 400px) {
+    #NextBtn i { margin-top: 3vh; }
 }
 
 @media screen and (max-width:400px) {
@@ -136,6 +135,10 @@
     }
 }
 
+@media screen and (max-width: 340px){
+    .contact100-form-title { padding-bottom: 15px; }
+    .wrap-contact100 { padding: 35px 15px 33px 15px; }
+}
 
 @media screen and (max-width:300px) {
     #SideBarMobile li i {
