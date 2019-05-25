@@ -35,7 +35,7 @@
         <div id="SideBarMobile">
             <ul id="MobileNav" class="center">
                 <li class="mobile">
-                    <a id="MHard" class="mobilea" href="#" onclick="clickMobile(this)">
+                    <a id="MHard" class="mobilea" onclick="clickMobile(this)">
                         <i class="fas fa-graduation-cap"></i>
                     </a>
                     <ul id="CircularMenu">
@@ -52,7 +52,7 @@
                     </a>
                 </li>
                 <li class="mobile">
-                    <a class="mobilea" id="MContact" href="#" onclick="clickMobile(this)">
+                    <a class="mobilea" id="MContact" onclick="clickMobile(this)">
                         <i class="far fa-address-card"></i>
                     </a>
                     <ul id="CircularMenu2">
@@ -104,12 +104,12 @@
                 </div>
 
                 <div class="con-tooltip right">
-                    <a href="#softskillsContent"><i class="fas fa-graduation-cap zoom"></i></a>
+                    <a href="#SoftSkillsContent"><i class="fas fa-graduation-cap zoom"></i></a>
                     <div class="tooltip"><span>Naviguer vers SoftSkills</span></div>
                 </div>
 
                 <div class="con-tooltip right">
-                    <a href="#"><i id="SLang" class="fas fa-language zoom"></i></a>
+                    <a href="#LanguageContent"><i id="SLang" class="fas fa-language zoom"></i></a>
                     <div class="tooltip"><span>Naviguer vers Langues</span></div>
                 </div>
 
@@ -466,7 +466,7 @@
                 <div id="Security">
                     <h3><i class="fas fa-shield-alt"></i> Sécurité </h3>
                     <div>
-                        <h3> Collecte de données </h3>
+                        <h4> Collecte de données </h4>
                         <ul class="">
                             <li>Scan de ports, vulnérabilités (nmap, openvas, nessus)</li>
                             <li>campagne de fishing ciblée, Social engineering</li>
@@ -474,7 +474,7 @@
                         </ul>
                     </div>
                     <div>
-                        <h3> Exploitation </h3>
+                        <h4> Exploitation </h4>
                         <ul class="">
                             <li>Exploitation de vulnérabilités connues (CVE sur <a href="https://www.exploit-db.com/">exploitdb</a>)</li>
                             <li>Framework Metasploit (Cobaltstrike, Armitage)</li>
@@ -484,7 +484,7 @@
                         </ul>
                     </div>
                     <div>
-                        <h3> Forensic </h3>
+                        <h4> Forensic </h4>
                         <ul>
                             <li>Création de ghost</li>
                             <li>Analyse d'APK, fichier binaire (hollydbg, apkstudio) </li>
@@ -492,7 +492,7 @@
                         </ul>
                     </div>
                     <div class="">
-                        <h3> Wifi Hacking </h3>
+                        <h4> Wifi Hacking </h4>
                         <ul class="">
                             <li>Cracking WPA/WPA2, Protocol WPA2 Bypass</li>
                             <li>Social engineering</li>
@@ -522,36 +522,49 @@
 
     <div id="SoftSkillsContent">
         <h2 class="center"><i class="fas fa-graduation-cap"></i> SoftSkills </h2>
-        <div>
+
+        <div class="shadow">
             <p>Lors de mes travaux en équipes, j'ai appris a développer les compétences suivantes:</p>
             <ul class="">
                 <li>Communication : Simplifié par des outils tels que Teams, Discord, ...</li>
-                <li>TeamsWorking : S'accorder sur les tâches à réaliser, Distributions des tâches, Décomposition du travail à réaliser</li>
-                <li>Self-motivation : Ma Motivation est de mettre à bien le projet en un temps reccord</li>
-                <li>Work Pressure : Le respect des délais ainsi que l'empilation de projets à réaliser m'ont permis de gérer mon stress et donc d'augmenter ma capacité à réaliser au Stress</li>
-                <li>Méthodologie de travail : Agile pour les petits projets, SCRUM pour des plus gros projets afin de mieux répartir le travail et donc de mieux gérer une équipe</li>
+                <li>TeamsWorking :
+                    <ul>
+                        <li>S'accorder sur les tâches à réaliser</li>
+                        <li>Distributions des tâches</li>
+                        <li>Décomposition du travail à réaliser</li>
+                    </ul>
+                </li>
+                <li>Self-motivation : Ma Motivation est de mettre à bien le projet en un temps record</li>
+                <li>Work Pressure : l'ambition et l'organisation me permet de surpasser la pression</li>
+                <li> Méthodologie de travail :
+                    <ul>
+                        <li>Agile pour les petits projets</li>
+                        <li>Scrum pour des projets plus conséquent</li>
+                    </ul>
+                </li>
             </ul>
         </div>
-    </div>
 
-    <div class="" id="LanguageContent">
-        <h2 class=""><i class="fas fa-language"></i> Langues </h2>
-        <div class="">
-            <div id="circle_fr">
-                <div class="circle1"></div>
-                <div class="circle2"></div>
-                <canvas height="200" width="200" id="counter_fr" class="counter"></canvas>
+        <div class="" id="LanguageContent">
+            <h2 class="center"><i class="fas fa-language"></i> Langues </h2>
+            <div class="">
+                <div id="circle_fr">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <canvas height="200" width="200" id="counter_fr" class="counter"></canvas>
+                </div>
+                <div id="circle_en">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <canvas height="200" width="200" id="counter_en" class="counter"></canvas>
+                </div>
+                <div id="circle_nl">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <canvas height="200" width="200" id="counter_nl" class="counter"></canvas>
+                </div>
             </div>
-            <div id="circle_en">
-                <div class="circle1"></div>
-                <div class="circle2"></div>
-                <canvas height="200" width="200" id="counter_en" class="counter"></canvas>
-            </div>
-            <div id="circle_nl">
-                <div class="circle1"></div>
-                <div class="circle2"></div>
-                <canvas height="200" width="200" id="counter_nl" class="counter"></canvas>
-            </div>
+
         </div>
 
     </div>

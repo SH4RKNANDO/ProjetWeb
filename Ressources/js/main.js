@@ -63,15 +63,6 @@ function hiddecontent() {
         height: '0px'
     });
 
-    /*
-    $('.tabcontent').css({
-        visibility: 'hidden',
-        height: '0px',
-        position: 'absolute',
-        paddingLeft: '40px',
-        marginLeft: '-100vw'
-    }); */
-
     $("#CircularMenu").fadeOut(0);
     $("#CircularMenu2").fadeOut(0);
     $('.content').fadeOut(0);
@@ -106,64 +97,55 @@ function clickMobile(x) {
 
 function OpencircularTab(x, number) {
 
-    if (number == 1) {
-        var circleMenu = document.getElementsByClassName('menu-item');
+    if (number === 1) {
+        let circleMenu = document.getElementsByClassName('menu-item');
+        let trans = "";
 
         $("#CircularMenu").fadeIn(400);
 
         for (let i = 0; i < circleMenu.length; i++) {
-            var trans = "";
             switch (i) {
                 case 0:
-                    trans = "rotate(-35deg) translateY(-71px) rotate(38deg)";
+                    trans = "rotate(-35deg) translateY(-66px) rotate(36deg)";
                     break;
-
                 case 1:
                     trans = "rotate(-8deg) translateY(-77px) rotate(10deg)";
                     break;
-
                 case 2:
                     trans = "rotate(16deg) translateY(-78px) rotate(-12deg)";
                     break;
-
                 case 3:
                     trans = "rotate(36deg) translateY(-79px) rotate(-27deg)";
                     break;
-
                 case 4:
                     trans = "rotate(52deg) translateY(-73px) rotate(-47deg)";
                     break;
             }
 
-
             $(this).delay(500).animate(900, function () {
                 circleMenu[i].style.transform = trans;
             });
         }
-    } else if (number == 2) {
+    } else if (number === 2) {
+        let circleMenu2 = document.getElementsByClassName('menu-item2');
+        let trans = "";
 
-        var circleMenu2 = document.getElementsByClassName('menu-item2');
         $("#CircularMenu2").fadeIn(400);
 
         for (let i = 0; i < circleMenu2.length; i++) {
-            var trans = "";
             switch (i) {
                 case 0:
                     trans = "rotate(-35deg) translateY(-71px) rotate(38deg)";
                     break;
-
                 case 1:
                     trans = "rotate(-8deg) translateY(-77px) rotate(10deg)";
                     break;
-
                 case 2:
                     trans = "rotate(16deg) translateY(-78px) rotate(-12deg)";
                     break;
-
                 case 3:
                     trans = "rotate(36deg) translateY(-79px) rotate(-27deg)";
                     break;
-
                 case 4:
                     trans = "rotate(52deg) translateY(-73px) rotate(-47deg)";
                     break;
@@ -198,20 +180,15 @@ function CloseCircularTab() {
 /* ##################### < Sidebar Animation  > ###################### */
 
 function openNav() {
-
-    $('#SideBarOpen').animate({
-        width: '230px'
-    }, 500);
-
-    $('.content').delay(400).fadeIn(500);
+    $('#ContactContent').animate({ marginLeft: '13vw' }, 500);
+    $('#SideBarOpen').delay(300).animate({ width: '230px' }, 500);
+    $('.content').delay(600).fadeIn(500);
 }
 
 function closeNav() {
     $('.content').fadeOut(500);
-
-    $('#SideBarOpen').delay(300).animate({
-        width: '0px'
-    }, 500);
+    $('#SideBarOpen').delay(300).animate({ width: '0px' }, 500);
+    $('#ContactContent').delay(700).animate({ marginLeft: '8vw' }, 500);
 }
 
 /* ##################### < Sliders Animations  > ###################### */
