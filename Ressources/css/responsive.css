@@ -11,12 +11,13 @@
 
 @media screen and (max-width: 1300px) {
     .mySlides { padding-left: 7vw; margin-left: 2vw; }
-    .play-btn, .pause-btn { left: 40vw; }
+    .play-btn, .pause-btn { left: 50vw; }
 }
 
 @media screen and (max-width: 1100px) {
     .slideshow-container { max-width: 70vw; }
     #SoftSkillsContent div, #LanguageContainer { margin-left: 15vw; width: 70vw; }
+    .play-btn, .pause-btn { left: 60vw; }
 }
 
 @media screen and (max-width: 1024px) {
@@ -41,6 +42,7 @@
     .alert-validate::before { visibility: visible; opacity: 1; }
     .slideshow-container { max-width: 80vw; }
     #SoftSkillsContent div, #LanguageContainer { margin-left: 10vw; width: 80vw; }
+    .play-btn, .pause-btn { left: 69vw;}
 }
 
 @media screen and (max-width: 920px) {
@@ -51,6 +53,7 @@
     #InfosContent h2 { font-size: 8vh; width: 60vw; margin-left: 22vw; }
     #InfosContent p { font-size: 1.8vh; }
     .mySlides { padding-left: 5vw; margin-left: 2vw; }
+    .play-btn, .pause-btn { left: 68vw;}
 }
 
 @media screen and (max-width: 768px) {
@@ -60,29 +63,20 @@
     #HardSkill span { display: none; }
     #HardSkill .tab i { padding-right: 10px; font-size: 1.9vw; }
     .rs1-wrap-input100 { width: 100%; }
-    .mySlides { font-size: 1.5vh; }
+    .mySlides { font-size: 1.5vh; margin-left: 10vw; }
     #SoftSkillsContent ul { margin-left: 4vw; }
 
     #circle_fr { padding-left: 25vw; }
     .circle1 { height: 80px; width: 80px; }
     .counter { width: 93px; height: 93px; margin-top: -85px; }
+    .play-btn, .pause-btn { left: 32vw; top: 53vh; }
+
 }
 
 @media screen and (max-width: 720px) {
     #InfosContent { padding-top: 5vh; }
-
-    #InfosContent h3 {
-        width: 45vw;
-        margin-left: 26vw;
-        font-size: 2vh;
-    }
-
-    #InfosContent p {
-        font-size: 1.5vh;
-        width: 64vw;
-        margin-left: 20vw;
-        margin-top: -1vh;
-    }
+    #InfosContent h3 { width: 45vw; margin-left: 26vw; font-size: 2vh; }
+    #InfosContent p { font-size: 1.5vh; width: 64vw; margin-left: 20vw; margin-top: -1vh; }
     #SoftSkillsContent { font-size: 1.4vh; }
 }
 
@@ -99,11 +93,7 @@
         margin-left: 20vw;
         text-align: center;
     }
-    .container-contact100 {
-        height: 80vh;
-        min-height: 80vh;
-        margin-top: 3vh;
-    }
+    .container-contact100 { height: 80vh; min-height: 80vh; margin-top: 3vh; }
     .wrap-input100 { margin-bottom: 20px; }
     .container-contact100-form-btn { margin-top: 0; }
     .contact100-form { padding-bottom: 20px; }
@@ -112,6 +102,7 @@
     .mySlides { font-size: 1.3vh; }
 
     #SoftSkillsContent ul { margin-left: 2vw; }
+    .play-btn, .pause-btn { left: 28vw; top: 50vh; }
 }
 
 @media screen and (max-width: 576px) {
@@ -124,6 +115,7 @@
 @media screen and (max-width: 520px) {
     .mySlides { font-size: 1.1vh; }
     #circle_fr { padding-left: 15vw; }
+    .play-btn, .pause-btn { top: 44vh; }
 }
 
 @media screen and (max-width: 500px){
@@ -136,11 +128,7 @@
 }
 
 @media screen and (max-width:450px) {
-    #SideBarMobile li i {
-        font-size: 15px;
-        margin-right: 7vw;
-        margin-left: 7vw;
-    }
+    #SideBarMobile li i { font-size: 15px; margin-right: 7vw; margin-left: 7vw; }
     #SideBarMobile #MHome i { bottom: 29px; }
     #LanguageContainer { height: auto; }
     #LanguageContent div { display: block; }
@@ -166,29 +154,27 @@
     #Home .fa-file-pdf { font-size: 3vh; }
 }
 
+@media screen and (max-width: 380px) {
+    .mySlides { margin-left: 0; }
+}
+
 @media screen and (max-width: 340px){
     .contact100-form-title { padding-bottom: 15px; }
     .wrap-contact100 { padding: 35px 15px 33px 15px; }
     .mySlides { font-size: 0.7vh; width: 200px; }
+    .mySlides { margin-left: 10vw; }
+    .play-btn, .pause-btn { top: 37vh; left: 90px; }
 }
 
 @media screen and (max-width:300px) {
-    #SideBarMobile li i {
-        font-size: 15px;
-        margin-right: 7vw;
-        margin-left: 7vw;
-    }
-
+    #SideBarMobile li i { font-size: 15px; margin-right: 7vw; margin-left: 7vw; }
     #SideBarMobile #MHome i { bottom: 29px; }
-
-    #SideBarMobile li i {
-        font-size: 12px;
-        margin-right: 7vw;
-        margin-left: 7vw;
-    }
+    #SideBarMobile li i { font-size: 12px; margin-right: 7vw; margin-left: 7vw; }
 }
 
-@media screen and (max-width: 1680px) {}
+@media screen and (max-width: 260px){
+    .mySlides { margin-left: 50px; }
+}
 
 
 /* ########### < DESKTOP SIZE > ############## */

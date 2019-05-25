@@ -468,7 +468,7 @@ a, i { cursor: pointer; }
 #SoftSkillsContent p, #SoftSkillsContent h3 { padding-left: 1vw; }
 
 /* #################### < LanguagesContent > #################### */
-#LanguageContainer { height: 220px; margin-left: 20vw; margin-top: 2vh; width: 60vw; min-width: 225px; }
+#LanguageContainer { margin-bottom: 22vh; height: 220px; margin-left: 20vw; margin-top: 2vh; width: 60vw; min-width: 225px; }
 
 #LanguageContent div {
     display: inline-block;
