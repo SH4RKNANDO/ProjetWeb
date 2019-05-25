@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 1100px) {
     .slideshow-container { max-width: 70vw; }
-    #SoftSkillsContent div { margin-left: 15vw; width: 70vw; }
+    #SoftSkillsContent div, #LanguageContainer { margin-left: 15vw; width: 70vw; }
 }
 
 @media screen and (max-width: 1024px) {
@@ -40,7 +40,7 @@
     .wrap-contact100 { padding: 82px 80px 33px 80px; }
     .alert-validate::before { visibility: visible; opacity: 1; }
     .slideshow-container { max-width: 80vw; }
-    #SoftSkillsContent div { margin-left: 10vw; width: 80vw; }
+    #SoftSkillsContent div, #LanguageContainer { margin-left: 10vw; width: 80vw; }
 }
 
 @media screen and (max-width: 920px) {
@@ -62,6 +62,10 @@
     .rs1-wrap-input100 { width: 100%; }
     .mySlides { font-size: 1.5vh; }
     #SoftSkillsContent ul { margin-left: 4vw; }
+
+    #circle_fr { padding-left: 25vw; }
+    .circle1 { height: 80px; width: 80px; }
+    .counter { width: 93px; height: 93px; margin-top: -85px; }
 }
 
 @media screen and (max-width: 720px) {
@@ -110,12 +114,25 @@
     #SoftSkillsContent ul { margin-left: 2vw; }
 }
 
-@media screen and (max-width: 520px) {
-    .mySlides { font-size: 1.1vh; }
-}
-
 @media screen and (max-width: 576px) {
     .wrap-contact100 { padding: 82px 15px 33px 15px; }
+    #circle_fr { padding-left: 20vw; }
+    .circle1 { height: 80px; width: 80px; }
+    .counter { width: 93px; height: 93px; margin-top: -85px; }
+}
+
+@media screen and (max-width: 520px) {
+    .mySlides { font-size: 1.1vh; }
+    #circle_fr { padding-left: 15vw; }
+}
+
+@media screen and (max-width: 500px){
+    .mySlides { font-size: 1.1vh; }
+    #LanguageContent div { margin-top: 15px; }
+    #LanguageContainer { height: 150px; margin-top: 0; }
+    #circle_fr { padding-left: 20vw; }
+    .circle1 { height: 60px; width: 60px; }
+    .counter { width: 70px; height: 70px; margin-top: -65px; }
 }
 
 @media screen and (max-width:450px) {
@@ -124,16 +141,15 @@
         margin-right: 7vw;
         margin-left: 7vw;
     }
-
     #SideBarMobile #MHome i { bottom: 29px; }
+    #LanguageContainer { height: auto; }
+    #LanguageContent div { display: block; }
+    #circle_en, #circle_nl, #circle_fr { padding-left: 40vw; }
+    .counter { margin-top: -60px; }
 }
 
 @media screen and (min-height: 400px) {
     #NextBtn i { margin-top: 3vh; }
-}
-
-@media screen and (max-width: 500px){
-    .mySlides { font-size: 1.1vh; }
 }
 
 @media screen and (max-width: 440px) {
