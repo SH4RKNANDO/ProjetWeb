@@ -12,18 +12,8 @@ ul, h3, hr, h2 {
     padding-inline-start: 0;
 }
 
-ul li {
-    list-style: none;
-    display: inline-block;
-    transition: 0.3s;
-}
-
-i {
-    color: #666666;
-    padding: 1vh;
-    font-size: 2vh;
-}
-
+ul li { list-style: none; display: inline-block; transition: 0.3s; }
+i { color: #666666; padding: 1vh; font-size: 2vh; }
 a, i { cursor: pointer; }
 
 .active { color: #4CAF50; }
@@ -472,8 +462,8 @@ a, i { cursor: pointer; }
 #SoftSkillsContent ul { background-color: transparent; margin-left: 7vw; padding-bottom: 15px; }
 #SoftSkillsContent ul li { display: block; margin-top: 15px; }
 #SoftSkillsContent ul li ul li {  margin-top: 0;  }
-#SoftSkillsContent div { margin-left: 25vw; width: 40vw; }
-#SoftSkillsContent p { padding-top: 15px; }
+#SoftSkillsContent div { margin-left: 20vw; width: 60vw; min-width: 225px; }
+#SoftSkillsContent p { padding-top: 15px; padding-left: 1vw; }
 
 /* ######################## <  Language Content > ######################### */
 #LanguageContent { margin-top: 15px; }
@@ -495,7 +485,6 @@ textarea::-webkit-input-placeholder { font-family: Poppins-Medium; color: #55555
 button { outline: none !important; border: none; background: transparent; }
 button:hover { cursor: pointer; }
 iframe { border: none !important; }
-
 
 .container { max-width: 1200px; }
 
