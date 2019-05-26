@@ -304,7 +304,7 @@ a, i { cursor: pointer; }
 /* ######################## <  Sliders Content > ######################### */
 
 /* Slideshow container */
-.slideshow-container { max-width: 60vw; position: relative; margin: auto; height: 85vh; min-width: 260px }
+.slideshow-container { max-width: 60vw; position: relative; min-height: 240px; margin: auto; height: 85vh; min-width: 260px }
 
 
 /* Hide the Content by default */
