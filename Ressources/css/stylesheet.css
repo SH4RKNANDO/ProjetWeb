@@ -296,7 +296,7 @@ a, i { cursor: pointer; }
 #HardSkillsContent { height: 100vh; overflow: hidden; }
 #HardSkillsContent h2 { padding-block-end: 15px; padding-block-start: 15px; margin-left: 30vw; }
 #HardSkillsContent h4 { margin-top: 20px; margin-bottom: 20px; }
-#HardSkillsContent i { cursor: none; }
+#HardSkillsContent i { cursor: text; }
 #HardSkillsContent ul { margin-left: 25px; }
 #HardSkillsContent .fontdown { font-size: 10px; }
 #HardSkillsContent h2 img { height: 30px; margin-right: 20px; }
