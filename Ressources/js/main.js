@@ -8,7 +8,8 @@ var carouselTimeout = "";
 var no =0;
 var fill1= "";
 var fill2= "";
-var fill3 = "";
+var fill3= "";
+var SlideChanged=  0;
 
 $(document).ready(function () {
 
@@ -197,7 +198,11 @@ function closeNav() {
 
 // Next/previous controls
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+    if(SlideChanged === 0) {
+        SlideChanged = 1;
+        showSlides(slideIndex += n);
+        setTimeout(function() { SlideChanged = 0; }, 1000);
+    }
 }
 
 // Thumbnail image controls
