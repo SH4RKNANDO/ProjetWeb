@@ -93,7 +93,7 @@
         margin-left: 20vw;
         text-align: center;
     }
-    .container-contact100 { height: 80vh; min-height: 80vh; margin-top: 3vh; }
+    .container-contact100 { height: 80vh; min-height: 80vh; margin-top: -4vh; }
     .wrap-input100 { margin-bottom: 20px; }
     .container-contact100-form-btn { margin-top: 0; }
     .contact100-form { padding-bottom: 20px; }
