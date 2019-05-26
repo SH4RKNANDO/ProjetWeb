@@ -225,7 +225,7 @@
     </div>
 
     <div id="HardSkillsContent">
-        <h2>HardSkills<hr></h2>
+        <h2><img alt="Logo HardSkills" src="Ressources/img/icons/brain-icon.png">HardSkills</h2>
         <!-- Slideshow container -->
         <div class="slideshow-container shadow">
 
@@ -246,46 +246,79 @@
                             <li>Monitoring Réseaux (nmap, zenmap, ethercap, wireshark)</li>
                             <li>Test de sécurité (framework metasploit, beef, Armitage/CobaltStrike)</li>
                             <li>Recherche de vulnérabilités (Nessus, Openvas)</li>
-                            <li>Exploitation de failles connues (CVE sur exploitdb)</li>
-                            <li>Exploitation HID (Human Interface Device)</li>
+                            <li>Exploitation de failles connues, HID, ...</li>
                         </ul>
                     </div>
                     <div id="WinDesk">
                         <h4><i class="fab fa-windows"></i> windows 10</h4>
                         <ul class="">
-                            <li>Développement d'application .net</li>
-                            <li>Déploiement et configuration d'un poste client</li>
+                            <li><p>Windows 10 est utilisé principalement pour </p>
+                                <ul>
+                                    <li>Développement d'application .net</li>
+                                    <li>Déploiement et configuration</li>
+                                    <li>Test de sécurité</li>
+                                    <li>Recherche de vulnérabilités</li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <!-- OS Server -->
+            <!-- OS Server Windows -->
             <div class="mySlides fade">
-                <div id="Server" class="slide-items">
-                    <h3><i class="fas fa-server"></i> OS Server </h3>
+                <div id="ServerWins" class="slide-items">
+                    <h3><i class="fas fa-server"></i>  Windows Server 2012  </h3>
                     <div>
-                        <h4> Windows Server 2012 </h4>
                         <ul class="">
-                            <li>Déploiement (configuration de base)</li>
-                            <li>Service DHCP (gestion des scopes, du bail, de la politique dhcp)</li>
-                            <li>Service DNS (gestion de la zone primaire, secondaire, déléguée, DNS de cache)</li>
-                            <li>Service AD (gestion des utilisateurs, de la politique utilisateur)</li>
-                            <li>Déploiement des Services automatisés (Powershell)</li>
+                            <li>Déploiement du widows (configuration de base)</li>
+                            <li>Gestion du Firewall</li>
+                            <li>Dépannage de problème DHCP, DNS, AD</li>
+                            <li><i><ins>Configuration des services</ins></i>
+                                <ul class="">
+                                    <li>DHCP (gestion des scopes, du bail, de la politique dhcp)</li>
+                                    <li>DNS (gestion de la zone primaire, secondaire, déléguée, DNS de cache)</li>
+                                    <li>AD (gestion des utilisateurs, de la politique utilisateur)</li>
+                                    <li>Samba (gestions des droits AGDLP)</li>
+                                    <li>Déploiement automatisé (Powershell)</li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
+                </div>
+            </div>
+            <!-- OS Server Linux -->
+            <div class="mySlides fade">
+                <div id="ServerLinux" class="slide-items">
+                    <h3><i class="fas fa-server"></i> Linux Server <span class="fontdown" >(Archlinux RedHat CentOS Fedora Ubuntu Debian)</span></h3>
                     <div>
-                        <h4> Archlinux RedHat CentOS Fedora Ubuntu  Debian</h4>
                         <ul class="">
-                            <li>Smart Serveur de caméra surveillance (Zoneminder) </li>
-                            <li>Déploiement (Configuration de base)</li>
-                            <li>Service ssh (ssh jail, sécurisation, gestion clés privées/publiques) </li>
-                            <li>Service Samba (gestions des utilisateurs, groupes) </li>
-                            <li>Service VSFTPD (sécurisation clés privée/publique, jailuser) </li>
-                            <li>Service Apache (gestions des hôtes virtuels) </li>
-                            <li>Service DNS - BIND (gestions des zones primaires,secondaires, déléguées, DNSSEC) </li>
-                            <li>Service NFS (montage automatique, ghost)</li>
-                            <li>Sécurité de Base (Selinux, FSTAB, Single Boot, règles iptables, anti-scan, AV)</li>
-                            <li>Serveur WebRadio (AirTimes)</li>
+                            <li><i><ins>Déploiement Server</ins></i>
+                                <ul class="">
+                                    <li>caméra surveillance (Zoneminder)</li>
+                                    <li>WebRadio (AirTimes)</li>
+                                    <li>Générique (Configuration de base)</li>
+                                    <li>Générique (Configuration de base)</li>
+                                </ul>
+                            </li>
+                            <li><i><ins>Configuration des Services</ins></i>
+                                <ul class="">
+                                    <li>SSH (ssh jail, sécurisation, gestion clés privées/publiques)</li>
+                                    <li>Samba (gestions des utilisateurs, groupes)</li>
+                                    <li>VSFTPD (sécurisation clés privée/publique, jailuser)</li>
+                                    <li>Apache (gestions des hôtes virtuels)</li>
+                                    <li>DNS-BIND (gestions des zones primaires,secondaires, déléguées, DNSSEC)</li>
+                                    <li>NFS (montage automatique, ghost)</li>
+                                </ul>
+                            </li>
+                            <li><i><ins>Sécurité de Base</ins></i>
+                                <ul>
+                                    <li>Selinux configuration</li>
+                                    <li>FSTAB (nodev,nosuid,noexec,..)</li>
+                                    <li>Firewall avec états (iptables)</li>
+                                    <li>fail2ban (anti-scan, anti-ddos)</li>
+                                    <li>Anti-Virus (clamav)</li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -297,30 +330,41 @@
                     <div>
                         <h4>Cisco Operating System (IOS) </h4>
                         <ul class="">
-                            <li>Configuration de Base Switch Access, Switch Distribution, Router </li>
-                            <li>Configuration de vlan, dhcp, voip, VPN </li>
-                            <li>Configuration du routage statique, dynamique</li>
-                            <li>Sécurisation switch, router (Access ssh, encryption, sécurisation ARP/IPSG)</li>
-                            <li>Configuration d'ACL étendues</li>
-                            <li>Monitoring</li>
+                            <li><i><ins>Configuration</ins></i>
+                                <ul class="competences">
+                                    <li>Switch Access, Distribution, Router</li>
+                                    <li>vlan, dhcp, voip, VPN</li>
+                                    <li>routage statique, dynamique</li>
+                                    <li>switch, router (SSH, encryption, sécurisation ARP/IPSG)</li>
+                                    <li>ACL et ACL étendues</li>
+                                    <li>Monitoring Syslog</li>
+                                </ul>
                         </ul>
                     </div>
                     <div>
                         <h4> OpenWrt </h4>
                         <ul class="">
                             <li>Déploiement OpenVPN</li>
-                            <li>Configuration bandes wifi (fréquences, ...)</li>
-                            <li>Configuration dhcp, vlan, règles iptables LAN/WAN</li>
                             <li>Sécurisation (HTTPS, SSH clés Privée/Publique, ...)</li>
-                            <li>Monitoring</li>
+                            <li><i><ins>Configuration</ins></i>
+                                <ul class="competences">
+                                    <li>bandes wifi (fréquences, ...)</li>
+                                    <li>DHCP, VLAN</li>
+                                    <li>règles iptables LAN/WAN</li>
+                                    <li>Monitoring SSH, Syslog</li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <div class="">
                         <h4>Fortinet FortiOS </h4>
                         <ul class="decorationNone">
-                            <li>Configuration du routage, DHCP, inter-vlan</li>
-                            <li>Configuration en VDOM</li>
                             <li>Sécurisation du firewall (ACL étendu)</li>
+                            <li><i><ins>Configuration</ins></i>
+                                <ul class="competences">
+                                    <li>Routage (inter-vlan), VDOM, DHCP</li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -347,9 +391,8 @@
                         <h4> C# </h4>
                         <ul class="">
                             <li>IDE Visual Studio</li>
-                            <li>Application Graphique (WPF)</li>
-                            <li>Application Console</li>
-                            <li>Développement de Service Windows</li>
+                            <li>Application Console et Graphique (WPF)</li>
+                            <li>Service Windows</li>
                             <li>Programmation Réseaux (Socket)</li>
                         </ul>
                     </div>
@@ -357,6 +400,7 @@
                         <h4> Java </h4>
                         <ul class="">
                             <li>Développement d'interface Graphique (Java Swing)</li>
+                            <li></li>
                         </ul>
                     </div>
                 </div>
@@ -427,8 +471,7 @@
                             <li>Backup d'une base de donnée, d'une table</li>
                             <li>Gestion des utilisateurs</li>
                             <li>Génération des vues</li>
-                            <li>Création de procédures stockées</li>
-                            <li>Création de Scripts SQL</li>
+                            <li>Création de procédures stockées et script SQL</li>
                         </ul>
                     </div>
                 </div>
@@ -516,6 +559,7 @@
                 <span class="dot" onclick="currentSlide(6)"></span>
                 <span class="dot" onclick="currentSlide(7)"></span>
                 <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
             </div>
         </div>
     </div>

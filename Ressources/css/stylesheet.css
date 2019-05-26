@@ -4,7 +4,7 @@ html, body { margin: 0; padding: 0; overflow-x: hidden; scroll-behavior: smooth;
 ul { background-color: #111; border-radius: 6px; }
 
 /* Hack Google Chrome */
-ul, h3, hr, h2 {
+ul, hr, h2, h3, h4 {
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-start: 0;
@@ -59,17 +59,15 @@ a, i { cursor: pointer; }
 #SideBarMobile #MHome i {
     transform: scale(1.4);
     bottom: 37px;
-    margin-top: 15px;
+    margin-top: 15px;    padding-top: 10px;
+
     border: solid 2px;
     border-color: white;
     border-radius: 50%;
     background-color: #111;
 }
 
-#SideBarMobile .mobile .active i {
-    color: #4CAF50;
-    transform: scale(1.4);
-}
+#SideBarMobile .mobile .active i { color: #4CAF50; transform: scale(1.4); }
 
 /* ##################################
    #      <  Circle SubMenu >       #
@@ -214,21 +212,21 @@ a, i { cursor: pointer; }
     100% { transform: translateY(1px); }
 }
 
-/*hover ToolTip*/
+/* hover ToolTip */
 .left:hover { transition: 0.3s; }
 .top:hover { transform: translateY(-6px); }
 .bottom:hover { transform: translateY(6px); }
 .right:hover { transition: 0.3s; }
 
-/*left*/
+/* left */
 .left .tooltip { top: -20%; left: -170%; }
 .left .tooltip::after { top: 40%; left: 90%; transform: rotate(-90deg); }
 
-/*bottom*/
+/* bottom */
 .bottom .tooltip { top: 115%; left: -20%; }
 .bottom .tooltip::after { top: -17%; left: 40%; transform: rotate(180deg); }
 
-/*right*/
+/* right */
 .right .tooltip { top: -40%; left: 115%; }
 .right .tooltip::after { top: 40%; left: -12%; transform: rotate(90deg); }
 
@@ -296,8 +294,12 @@ a, i { cursor: pointer; }
 /* ######################## <  HardSkill Content > ######################### */
 
 #HardSkillsContent { height: 100vh; overflow: hidden; }
-#HardSkillsContent h2 { padding-block-end: 15px; margin-left: 30vw; font-size: 40px; }
-#HardSkillsContent hr { width: 50%; text-align: left; }
+#HardSkillsContent h2 { padding-block-end: 15px; padding-block-start: 15px; margin-left: 30vw; }
+#HardSkillsContent h4 { margin-top: 20px; margin-bottom: 20px; }
+#HardSkillsContent i { cursor: none; }
+#HardSkillsContent ul { margin-left: 25px; }
+#HardSkillsContent .fontdown { font-size: 10px; }
+#HardSkillsContent h2 img { height: 30px; margin-right: 20px; }
 
 /* ######################## <  Sliders Content > ######################### */
 
@@ -309,7 +311,7 @@ a, i { cursor: pointer; }
 .mySlides {
     font-size: 1.9vh;
     padding-left: 8vw;
-    padding-top: 30px;
+    padding-top: 10px;
     display: none;
     padding-bottom: 15px;
     margin-left: 3vw;
@@ -317,7 +319,7 @@ a, i { cursor: pointer; }
 .mySlides h3 { margin-left: 4vw; }
 .mySlides ul { background-color: transparent; }
 .mySlides ul li { display: block; margin-top: 10px; }
-.mySlides h3 { padding-top: 10px; padding-bottom: 10px; }
+.mySlides h3 { padding-bottom: 10px; }
 
 #Desktop { position: relative; }
 #WinDesk { margin-top: 15px; }
