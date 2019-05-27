@@ -689,7 +689,8 @@ textarea.input100 { min-height: 110px; padding-top: 9px; padding-bottom: 13px; }
     margin-top: -25px;
 }
 
-.contact100-form-btn {
+.contact100-form-btn {    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
