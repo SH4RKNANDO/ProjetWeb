@@ -235,9 +235,11 @@
     .slideshow-container { height: 240px; }
 }
 
+
 @media screen and (max-width: 600px) {
     .play-btn, .pause-btn { display: none; }
 }
+
 @media screen and (max-height: 780px) {
     .play-btn, .pause-btn { display: none; }
 }

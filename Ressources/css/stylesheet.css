@@ -460,7 +460,7 @@ a, i { cursor: pointer; }
 
 
 /* ######################## <  SoftSkills Content > ######################### */
-#SoftSkillsContent { height: 50vh; }
+#SoftSkillsContent { height: 50vh; margin-bottom: 4vh; }
 #SoftSkillsContent ul { background-color: transparent; margin-left: 7vw; padding-bottom: 15px; }
 #SoftSkillsContent ul li { display: block; margin-top: 15px; }
 #SoftSkillsContent ul li ul li {  margin-top: 0;  }
@@ -470,8 +470,10 @@ a, i { cursor: pointer; }
 #SoftSkillsContent p, #SoftSkillsContent h3 { padding-left: 1vw; }
 
 /* #################### < LanguagesContent > #################### */
-#LanguageContainer { margin-bottom: 22vh; height: 220px; margin-left: 20vw; margin-top: 2vh; width: 60vw; min-width: 225px; }
+#LanguageContainer { margin-bottom: 22vh; height: 220px; margin-left: 20vw; width: 60vw; min-width: 225px; }
+#LanguageContainer h2 {
 
+}
 #LanguageContent div {
     display: inline-block;
     margin-top: 30px;
@@ -528,10 +530,6 @@ a, i { cursor: pointer; }
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
-
-
-
-
 
 /* ######################## <  Contact Content > ######################### */
 #ContactContent {
@@ -758,7 +756,6 @@ textarea.input100 { min-height: 110px; padding-top: 9px; padding-bottom: 13px; }
 
 .alert-validate:hover:before { visibility: visible; opacity: 1; }
 
-
 /* ###########################
    #     < Contact  Moore >  #
    ########################### */
@@ -771,7 +768,6 @@ textarea.input100 { min-height: 110px; padding-top: 9px; padding-bottom: 13px; }
 }
 
 .contact100-more-highlight { color: #ff4b5a; }
-
 
 /* ########################
    #     < Button Hide >  #

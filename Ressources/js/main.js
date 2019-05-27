@@ -83,13 +83,13 @@ function clickMobile(x) {
     x.classList.remove('activenone');
     x.classList.add('active');
 
-    if (x.id == "MHard") {
+    if (x.id === "MHard") {
         if (document.getElementById('CircularMenu').style.display === 'none') {
             OpencircularTab(x, 1);
         } else {
             CloseCircularTab();
         }
-    } else if (x.id == "MContact") {
+    } else if (x.id === "MContact") {
         if (document.getElementById('CircularMenu2').style.display === 'none') {
             OpencircularTab(x, 2);
         } else {
