@@ -9,6 +9,8 @@
 *
 **********************************************/
 
+/* Max Width */
+
 @media screen and (max-width: 1300px) {
     .mySlides { padding-left: 7vw; margin-left: 2vw; }
     .play-btn, .pause-btn { left: 50vw; }
@@ -142,10 +144,6 @@
     .counter { margin-top: -60px; }
 }
 
-@media screen and (min-height: 400px) {
-    #NextBtn i { margin-top: 3vh; }
-}
-
 @media screen and (max-width: 440px) {
     .mySlides { width: 280px; font-size: 1vh; }
     .play-btn, .pause-btn { top: 40vh; }
@@ -199,10 +197,16 @@
     .mySlides { margin-left: 50px; }
 }
 
+/* Max Height */
 @media screen and (max-height: 770px) {
     #HardSkillsContent h4 { margin-top: 10px; margin-bottom: 10px; }
     .dot { height: 10px; width: 10px; }
     .play-btn, .pause-btn { top: 54vh; }
+}
+
+@media screen and (max-height: 768px) {
+    #LanguageContent div { width: 80px; height: 80px; }
+    .counter { width: 92px; height: 92px; margin-top: -83px; }
 }
 
 @media screen and (max-height: 550px) {
@@ -218,7 +222,9 @@
         border-bottom: 6px solid transparent;
         border-left: 11px solid #fff;
     }
-
+    #LanguageContent div { width: 50px; height: 50px; }
+    .counter { width: 58px; height: 58px; margin-top: -52px; }
+    #LanguageContent div { margin-top: 18px; }
 }
 
 @media screen and (max-height: 480px){
@@ -231,19 +237,26 @@
     #HardSkillsContent h4 { margin-top: 2px; margin-bottom: 2px; }
 }
 
+@media screen and (max-height: 400px) {
+    #LanguageContent div { width: 25px; height: 25px; }
+    .counter { width: 28px; height: 28px; margin-top: -27px; }
+    #LanguageContent div { margin-top: 8px; }
+}
 @media screen and (max-height: 344px){
     .slideshow-container { height: 240px; }
 }
 
-
+/* Btn Display None */
 @media screen and (max-width: 600px) {
     .play-btn, .pause-btn { display: none; }
 }
-
 @media screen and (max-height: 780px) {
     .play-btn, .pause-btn { display: none; }
 }
 
+@media screen and (min-height: 400px) {
+    #NextBtn i { margin-top: 3vh; }
+}
 
 /* ########### < DESKTOP SIZE > ############## */
 /* 1920px / 1080px */

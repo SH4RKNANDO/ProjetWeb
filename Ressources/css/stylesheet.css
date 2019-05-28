@@ -93,6 +93,7 @@ a, i { cursor: pointer; }
 #SideBarClose { position: fixed; top: 30vh; }
 #sideBarClose .openbtn:hover { background-color: #444; }
 #SideBarClose .fa-file-pdf { padding: 1vh; font-size: 2vh; margin-left: 3px; }
+#SideBarClose ul li { display: block; }
 
 /* ######################## < SideBar Open > ######################### */
 
@@ -460,28 +461,32 @@ a, i { cursor: pointer; }
 
 
 /* ######################## <  SoftSkills Content > ######################### */
-#SoftSkillsContent { height: 50vh; margin-bottom: 4vh; }
+#SoftSkillsContent { height: 100vh; margin-bottom: 4vh; }
 #SoftSkillsContent ul { background-color: transparent; margin-left: 7vw; padding-bottom: 15px; }
 #SoftSkillsContent ul li { display: block; margin-top: 15px; }
 #SoftSkillsContent ul li ul li {  margin-top: 0;  }
-#SoftSkillsContent div { margin-left: 20vw; width: 60vw; min-width: 225px; }
+#SoftSkillsContent div { font-size: 2vh; margin-left: 20vw; width: 60vw; min-width: 225px; }
 #SoftSkillsContainer { margin-top: 1vh; }
 #SoftSkillsContent h3 { padding-top: 15px; }
 #SoftSkillsContent p, #SoftSkillsContent h3 { padding-left: 1vw; }
+#SoftSkillsContent h2 { font-size: 3vh; margin-top: 2vh; }
 
 /* #################### < LanguagesContent > #################### */
-#LanguageContainer { margin-bottom: 22vh; height: 220px; margin-left: 20vw; width: 60vw; min-width: 225px; }
-#LanguageContainer h2 {
+#LanguageContainer { margin-top: 3vh; margin-bottom: 22vh; height: 220px; margin-left: 20vw; width: 60vw; min-width: 225px; }
+#LanguageContainer div { margin-left: 0; }
+#LanguageContent { padding-left: 20vw; }
 
-}
 #LanguageContent div {
     display: inline-block;
     margin-top: 30px;
     margin-right: 10px;
     margin-left: inherit;
+    width: 100px;
+    height: 100px;
+    min-width: unset;
 }
 
-#circle_fr { padding-left: 24vw; padding-top: 3vh; }
+#circle_fr { padding-top: 3vh; }
 
 .counter {
     position: absolute;
@@ -489,7 +494,7 @@ a, i { cursor: pointer; }
     z-index: 9;
     width: 117px;
     height: 117px;
-    margin-top: -105px;
+    margin-top: -107px;
 }
 
 .circle1 {
